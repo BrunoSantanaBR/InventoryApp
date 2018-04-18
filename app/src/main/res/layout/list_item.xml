@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for a single list item in the list of products -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="5"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_margin">
+
+    <TextView
+        android:id="@+id/list_name_product_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#2B3D4D" />
+
+    <TextView
+        android:id="@+id/list_quantity_product_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#AEB6BD" />
+
+    <TextView
+        android:id="@+id/list_price_product_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#AEB6BD" />
+
+    <Button
+        android:id="@+id/sale_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:text="@string/sale_button"
+        android:textSize="10sp" />
+
+</LinearLayout>
