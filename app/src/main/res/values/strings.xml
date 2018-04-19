@@ -107,14 +107,16 @@
     <string name="product_sold_out">Product sold out</string>
 
     <!-- Validate text to fill up the Product name field -->
-    <string name="check_name_product">Fill the field product name</string>
+    <string name="check_name_product">Product name cannot be empty</string>
 
     <!-- Validate text to fill up the Product price field -->
-    <string name="check_price_product">Fill the field product price with values more than 0</string>
+    <string name="check_price_product">Product price cannot be empty or negative.</string>
 
     <!-- Validate text to fill up the Product supplier name field -->
-    <string name="check_name_supplier">Fill the field supplier name</string>
+    <string name="check_name_supplier">Supplier name cannot be empty</string>
 
+    <!-- Validate text to fill up all fields -->
+    <string name="check_all_fields">The fields are empty. Fill them with valid data.</string>
 
 
 </resources>

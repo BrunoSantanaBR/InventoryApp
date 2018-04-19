@@ -133,7 +133,7 @@
                 android:id="@+id/phone_number_supplier_edit_text"
                 style="@style/EditorFieldStyle"
                 android:hint="@string/hint_supplier_phone"
-                android:inputType="number" />
+                android:inputType="phone" />
 
             <Button
                 android:id="@+id/call_supplier_button"

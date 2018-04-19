@@ -4,7 +4,6 @@ import android.app.LoaderManager;
 import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.CursorLoader;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
@@ -18,11 +17,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.example.android.inventoryapp.data.ProductContract.ProductEntry;
-import com.example.android.inventoryapp.data.ProductDbHelper;
-import com.example.android.inventoryapp.ProductCursorAdapter;
+
 
 /**
  * Displays list of products that were entered and stored in the app.

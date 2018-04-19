@@ -2,6 +2,7 @@ package com.example.android.inventoryapp;
 
 import android.app.AlertDialog;
 import android.app.LoaderManager;
+import android.view.Gravity;
 import android.widget.Button;
 import android.content.ContentValues;
 import android.content.CursorLoader;
@@ -167,6 +168,18 @@ public class EditorActivity extends AppCompatActivity implements
                 TextUtils.isEmpty(phoneNumberSupplierString)) {
             // Since no fields were modified, we can return early without creating a new product.
             // No need to create ContentValues and no need to do any ContentProvider operations.
+            Toast.makeText(this, R.string.check_all_fields, Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (TextUtils.isEmpty(nameProductString)) {
+            Toast.makeText(this, R.string.check_name_product, Toast.LENGTH_SHORT).show();
+            return;
+        } else if (TextUtils.isEmpty(priceProductString)) {
+            Toast.makeText(this, R.string.check_price_product, Toast.LENGTH_SHORT).show();
+            return;
+        } else if (TextUtils.isEmpty(nameSupplierString)) {
+            Toast.makeText(this, R.string.check_name_supplier, Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -510,5 +523,15 @@ public class EditorActivity extends AppCompatActivity implements
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse(uri));
         startActivity(intent);
+    }
+
+    private void addDelay(int time){
+        try {
+            //set time in mili
+            Thread.sleep(time);
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }
