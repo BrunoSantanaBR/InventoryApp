@@ -2,7 +2,6 @@ package com.example.android.inventoryapp;
 
 import android.app.AlertDialog;
 import android.app.LoaderManager;
-import android.view.Gravity;
 import android.widget.Button;
 import android.content.ContentValues;
 import android.content.CursorLoader;
@@ -525,13 +524,4 @@ public class EditorActivity extends AppCompatActivity implements
         startActivity(intent);
     }
 
-    private void addDelay(int time){
-        try {
-            //set time in mili
-            Thread.sleep(time);
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }
 }
